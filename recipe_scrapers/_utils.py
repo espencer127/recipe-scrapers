@@ -179,6 +179,14 @@ def normalize_string(string):
         .replace("\u200b", "")
         .replace("\n", " ")  # &nbsp;
         .replace("\t", " ")
+        .replace("¼", "1/4")
+        .replace("½", "1/2")
+        .replace("¾", "3/4")
+        .replace("⅓", "1/3")
+        .replace("⅔", "2/3")
+        .replace("⅕", "1/5")
+        .replace("⅖", "2/5")
+        .replace("⅗", "3/5")
         .strip(),
     )
 
